@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turning Tide — Logo, Branding & Web Design Agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="10" fill="currentColor"/>
+          <path d="M8 14h32v5H30v17h-6V19H8v-5z" fill="white"/>
+          <path d="M18 14h22v5H34v17h-6V19H18v-5z" fill="white" opacity="0.5"/>
+        </svg>
+        <span>Turning Tide</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn--small">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero__badge">Design Agency</div>
+      <h1 class="hero__title">
+        We craft brands<br>
+        that <span class="text-gradient">turn the tide</span>
+      </h1>
+      <p class="hero__subtitle">
+        Logo design, brand identity, and web experiences that set your business apart. We transform ideas into visual stories that connect and convert.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Start a Project</a>
+        <a href="#work" class="btn btn--outline">View Our Work</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number">150+</span>
+          <span class="hero__stat-label">Projects Delivered</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">80+</span>
+          <span class="hero__stat-label">Happy Clients</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">5+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg">
+      <div class="hero__gradient hero__gradient--1"></div>
+      <div class="hero__gradient hero__gradient--2"></div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Services built around your brand</h2>
+        <p class="section-desc">From concept to launch, we provide everything you need to build a standout brand presence.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M17 20c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              <path d="M24 27v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Logo Design</h3>
+          <p class="service-card__desc">Distinctive, memorable logos that capture your brand's essence. From abstract monograms to wordmarks — crafted to stand the test of time.</p>
+          <ul class="service-card__list">
+            <li>Custom Logo Concepts</li>
+            <li>Monogram & Wordmark Design</li>
+            <li>Logo Variations & Responsive Marks</li>
+            <li>File Delivery (SVG, PNG, PDF)</li>
+          </ul>
+        </div>
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Most Popular</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="12" y="12" width="10" height="10" rx="2" fill="currentColor" opacity="0.3"/>
+              <rect x="26" y="12" width="10" height="10" rx="2" fill="currentColor"/>
+              <rect x="12" y="26" width="10" height="10" rx="2" fill="currentColor"/>
+              <rect x="26" y="26" width="10" height="10" rx="2" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Brand Identity</h3>
+          <p class="service-card__desc">Complete visual identity systems that give your brand a cohesive, professional presence across every touchpoint.</p>
+          <ul class="service-card__list">
+            <li>Brand Strategy & Positioning</li>
+            <li>Color Palette & Typography</li>
+            <li>Brand Guidelines Document</li>
+            <li>Stationery & Collateral Design</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M4 16h40" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="9" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="14" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="19" cy="12" r="1.5" fill="currentColor"/>
+              <path d="M16 40h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 36v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Website Design</h3>
+          <p class="service-card__desc">Beautiful, high-performance websites that look stunning on every device and turn visitors into customers.</p>
+          <ul class="service-card__list">
+            <li>UI/UX Design & Prototyping</li>
+            <li>Responsive Web Development</li>
+            <li>CMS Integration</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Selected projects</h2>
+        <p class="section-desc">A showcase of brands we've built and transformed.</p>
+      </div>
+      <div class="work__grid">
+        <div class="work-card work-card--wide">
+          <div class="work-card__image" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+            <div class="work-card__mockup">
+              <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="15" width="160" height="90" rx="8" fill="#0f0f23" stroke="#333" stroke-width="1"/>
+                <rect x="30" y="30" width="60" height="8" rx="4" fill="#6c63ff" opacity="0.8"/>
+                <rect x="30" y="45" width="80" height="4" rx="2" fill="#555"/>
+                <rect x="30" y="55" width="70" height="4" rx="2" fill="#444"/>
+                <rect x="30" y="65" width="50" height="12" rx="6" fill="#6c63ff"/>
+                <rect x="120" y="30" width="50" height="50" rx="6" fill="#6c63ff" opacity="0.2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__tag">Branding + Website</span>
+            <h3 class="work-card__title">NovaTech Solutions</h3>
+            <p class="work-card__desc">Complete rebrand and web platform for a growing SaaS startup.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card__image" style="background: linear-gradient(135deg, #2d1b69, #11998e);">
+            <div class="work-card__mockup">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="35" stroke="white" stroke-width="2" opacity="0.3"/>
+                <text x="60" y="68" text-anchor="middle" fill="white" font-size="28" font-weight="bold" font-family="sans-serif">V</text>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__tag">Logo Design</span>
+            <h3 class="work-card__title">Vertex Capital</h3>
+            <p class="work-card__desc">Monogram logo for a boutique investment firm.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card__image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="work-card__mockup">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="30" width="70" height="60" rx="8" fill="white" opacity="0.15"/>
+                <rect x="32" y="40" width="30" height="4" rx="2" fill="white" opacity="0.6"/>
+                <rect x="32" y="50" width="50" height="3" rx="1.5" fill="white" opacity="0.3"/>
+                <rect x="32" y="58" width="40" height="3" rx="1.5" fill="white" opacity="0.3"/>
+                <circle cx="75" cy="70" r="10" fill="white" opacity="0.2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__tag">Brand Identity</span>
+            <h3 class="work-card__title">Bloom Studio</h3>
+            <p class="work-card__desc">Full brand identity for a creative photography studio.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-card__image" style="background: linear-gradient(135deg, #0c3547, #1cb5e0);">
+            <div class="work-card__mockup">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 80 L60 40 L80 80 Z" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+                <circle cx="60" cy="55" r="8" fill="white" opacity="0.3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__tag">Branding + Website</span>
+            <h3 class="work-card__title">Alpine Gear Co.</h3>
+            <p class="work-card__desc">Outdoor adventure brand identity and e-commerce site.</p>
+          </div>
+        </div>
+        <div class="work-card work-card--wide">
+          <div class="work-card__image" style="background: linear-gradient(135deg, #232526, #414345);">
+            <div class="work-card__mockup">
+              <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="40" y="25" width="50" height="70" rx="6" fill="#222" stroke="#555" stroke-width="1"/>
+                <rect x="45" y="35" width="40" height="45" rx="3" fill="#333"/>
+                <rect x="50" y="42" width="20" height="3" rx="1.5" fill="#6c63ff" opacity="0.6"/>
+                <rect x="50" y="50" width="30" height="2" rx="1" fill="#555"/>
+                <rect x="50" y="56" width="25" height="2" rx="1" fill="#555"/>
+                <rect x="110" y="25" width="50" height="70" rx="6" fill="#222" stroke="#555" stroke-width="1"/>
+                <rect x="115" y="35" width="40" height="45" rx="3" fill="#333"/>
+                <circle cx="135" cy="52" r="8" fill="#6c63ff" opacity="0.3"/>
+                <rect x="125" y="65" width="20" height="3" rx="1.5" fill="#6c63ff" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__tag">Website Design</span>
+            <h3 class="work-card__title">Meridian Health</h3>
+            <p class="work-card__desc">Modern healthcare platform with booking system and patient portal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">Our process</h2>
+        <p class="section-desc">A proven approach that delivers results, every time.</p>
+      </div>
+      <div class="process__grid">
+        <div class="process-step">
+          <div class="process-step__number">01</div>
+          <h3 class="process-step__title">Discovery</h3>
+          <p class="process-step__desc">We dig deep into your business, audience, and goals. Understanding the full picture is how we create designs that actually work.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">02</div>
+          <h3 class="process-step__title">Strategy</h3>
+          <p class="process-step__desc">We define positioning, messaging, and visual direction. Every design decision is anchored in strategy, not guesswork.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">03</div>
+          <h3 class="process-step__title">Design</h3>
+          <p class="process-step__desc">Concepts take shape through iterative rounds. You're involved every step, and we refine until it's perfect.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">04</div>
+          <h3 class="process-step__title">Deliver</h3>
+          <p class="process-step__desc">Final assets, guidelines, and launch support. We hand over everything you need and make sure you're set up for success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__content">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">We're Turning Tide</h2>
+          <p>We're a design agency obsessed with creating brands that make an impact. Our team combines strategic thinking with creative execution to deliver work that doesn't just look good — it works.</p>
+          <p>Every project starts with understanding your story. We believe great design is rooted in purpose, and we won't settle for anything less than exceptional.</p>
+          <div class="about__values">
+            <div class="about__value">
+              <strong>Purpose-Driven</strong>
+              <span>Every pixel serves a goal</span>
+            </div>
+            <div class="about__value">
+              <strong>Collaborative</strong>
+              <span>Your vision, our expertise</span>
+            </div>
+            <div class="about__value">
+              <strong>Detail-Obsessed</strong>
+              <span>Craft in every corner</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__logo-showcase">
+            <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="280" height="280" rx="24" fill="#111"/>
+              <path d="M50 90h180v32H168v98h-38V122H50V90z" fill="white"/>
+              <path d="M92 90h138v32H192v98h-38V122H92V90z" fill="white" opacity="0.35"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What our clients say</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Turning Tide completely transformed our brand. The logo they created perfectly captures who we are, and our new website has doubled our conversion rate."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JR</div>
+            <div>
+              <strong>James Rodriguez</strong>
+              <span>CEO, NovaTech Solutions</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Professional, creative, and incredibly easy to work with. They took our vague ideas and turned them into a brand identity that we're genuinely proud of."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SK</div>
+            <div>
+              <strong>Sarah Kim</strong>
+              <span>Founder, Bloom Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"The team at Turning Tide delivered beyond expectations. Our rebrand has received incredible feedback and really set us apart in a crowded market."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MP</div>
+            <div>
+              <strong>Michael Park</strong>
+              <span>Director, Alpine Gear Co.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__content">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Ready to turn the tide?</h2>
+          <p>Tell us about your project and we'll get back to you within 24 hours with a free consultation.</p>
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              <span>hello@turningtide.agency</span>
+            </div>
+            <div class="contact__info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Available Worldwide — Remote First</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="logo">Logo Design</option>
+              <option value="branding">Brand Identity</option>
+              <option value="web">Website Design</option>
+              <option value="full">Full Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="10" fill="currentColor"/>
+              <path d="M8 14h32v5H30v17h-6V19H8v-5z" fill="white"/>
+              <path d="M18 14h22v5H34v17h-6V19H18v-5z" fill="white" opacity="0.5"/>
+            </svg>
+            <span>Turning Tide</span>
+          </a>
+          <p>Crafting brands that make waves.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Navigation</h4>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <a href="#services">Logo Design</a>
+            <a href="#services">Brand Identity</a>
+            <a href="#services">Website Design</a>
+            <a href="#contact">Get a Quote</a>
+          </div>
+          <div class="footer__col">
+            <h4>Connect</h4>
+            <a href="#">Twitter / X</a>
+            <a href="#">Instagram</a>
+            <a href="#">Dribbble</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Turning Tide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
