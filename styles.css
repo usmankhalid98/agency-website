@@ -845,6 +845,18 @@ ul { list-style: none; }
     padding: 12px 0;
   }
 
+  /* When menu is open, disable blend mode so nav sits on top cleanly */
+  .nav.nav--open {
+    mix-blend-mode: normal;
+    background: var(--charcoal);
+    position: fixed;
+    z-index: 200;
+  }
+
+  .nav.nav--open .nav__logo {
+    color: var(--cream);
+  }
+
   .nav__links {
     display: none;
     position: fixed;
@@ -857,7 +869,8 @@ ul { list-style: none; }
     align-items: center;
     gap: 40px;
     background: var(--charcoal);
-    z-index: 99;
+    z-index: 199;
+    padding-top: 80px;
   }
 
   .nav__links.active {
@@ -893,9 +906,9 @@ ul { list-style: none; }
 
   .nav__toggle {
     display: flex;
-    z-index: 101;
-    width: 32px;
-    height: 32px;
+    z-index: 201;
+    width: 44px;
+    height: 44px;
     align-items: center;
     justify-content: center;
     -webkit-tap-highlight-color: transparent;

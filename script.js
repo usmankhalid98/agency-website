@@ -34,7 +34,7 @@ const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('active');
   navToggle.classList.toggle('active');
-  // Prevent body scroll when menu is open
+  nav.classList.toggle('nav--open', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
@@ -42,6 +42,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
     navToggle.classList.remove('active');
+    nav.classList.remove('nav--open');
     document.body.style.overflow = '';
   });
 });
