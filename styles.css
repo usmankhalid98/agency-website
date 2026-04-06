@@ -413,10 +413,24 @@ ul { list-style: none; }
   line-height: 1.1;
 }
 
+.work-item__desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 520px;
+  margin-top: 8px;
+  transition: color 0.4s var(--ease);
+}
+
+.work-item:hover .work-item__desc {
+  color: var(--stone);
+}
+
 .work-item__year {
   font-size: 0.8rem;
   color: var(--text-muted);
   transition: color 0.4s var(--ease);
+  flex-shrink: 0;
 }
 
 .work-item:hover .work-item__year {
@@ -989,6 +1003,12 @@ ul { list-style: none; }
     font-size: 0.65rem;
   }
 
+  .work-item__desc {
+    font-size: 0.8rem;
+    margin-top: 6px;
+    max-width: 100%;
+  }
+
   .work-item__year {
     font-size: 0.7rem;
     padding-top: 4px;
@@ -1025,6 +1045,10 @@ ul { list-style: none; }
   }
 
   .work-item:active .work-item__year {
+    color: var(--stone);
+  }
+
+  .work-item:active .work-item__desc {
     color: var(--stone);
   }
 
@@ -1273,6 +1297,10 @@ ul { list-style: none; }
   }
 
   .work-item:hover .work-item__year {
+    color: var(--text-muted);
+  }
+
+  .work-item:hover .work-item__desc {
     color: var(--text-muted);
   }
 
