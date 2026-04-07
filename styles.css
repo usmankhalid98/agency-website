@@ -350,10 +350,11 @@ ul { list-style: none; }
 }
 
 .work-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px 0;
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: start;
+  gap: 40px;
+  padding: 40px 0;
   border-bottom: 1px solid var(--cream-dark);
   transition: all 0.4s var(--ease);
   position: relative;
@@ -386,10 +387,61 @@ ul { list-style: none; }
   color: var(--cream);
 }
 
+/* Logo area */
+.work-item__logo {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  color: var(--text);
+  transition: color 0.4s var(--ease);
+}
+
+.work-item__logo svg {
+  height: 32px;
+  width: auto;
+}
+
+.work-item:hover .work-item__logo {
+  color: var(--cream);
+}
+
 .work-item__info {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+/* Visit Website button */
+.work-item__btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 28px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  border: 1px solid var(--cream-dark);
+  transition: all 0.3s var(--ease);
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.work-item__btn:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+  border-color: var(--charcoal);
+}
+
+.work-item:hover .work-item__btn {
+  color: var(--cream);
+  border-color: var(--stone);
+}
+
+.work-item:hover .work-item__btn:hover {
+  background: var(--cream);
+  color: var(--charcoal);
+  border-color: var(--cream);
 }
 
 .work-item__category {
@@ -990,9 +1042,17 @@ ul { list-style: none; }
   }
 
   .work-item {
-    padding: 24px 0;
-    flex-direction: row;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+  }
+
+  .work-item__logo {
+    height: 36px;
+  }
+
+  .work-item__logo svg {
+    height: 24px;
   }
 
   .work-item__title {
@@ -1011,7 +1071,12 @@ ul { list-style: none; }
 
   .work-item__year {
     font-size: 0.7rem;
-    padding-top: 4px;
+  }
+
+  .work-item__btn {
+    padding: 12px 24px;
+    font-size: 0.7rem;
+    margin-top: 12px;
   }
 
   /* Disable hover effects on touch - use active state instead */
