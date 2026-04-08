@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left shape: wide rounded top flowing into narrow curved stem -->
+  <path d="
+    M 18,0
+    H 122
+    C 140,0 148,8 148,24
+    V 32
+    C 148,48 140,60 124,76
+    C 104,96 90,118 84,144
+    C 80,160 76,176 76,184
+    C 76,196 68,200 54,200
+    H 20
+    C 8,200 0,192 0,180
+    V 18
+    C 0,6 8,0 18,0
+    Z" fill="currentColor"/>
+
+  <!-- Right top: rounded square -->
+  <path d="
+    M 168,0
+    H 182
+    C 196,0 200,4 200,18
+    V 64
+    C 200,78 196,82 182,82
+    H 168
+    C 154,82 150,78 150,64
+    V 18
+    C 150,4 154,0 168,0
+    Z" fill="currentColor"/>
+
+  <!-- Right bottom: curved wedge -->
+  <path d="
+    M 200,118
+    V 182
+    C 200,196 194,200 180,200
+    H 112
+    C 98,200 94,194 98,182
+    C 106,156 122,136 144,122
+    C 162,110 180,108 190,110
+    C 196,112 200,114 200,118
+    Z" fill="currentColor"/>
+</svg>
