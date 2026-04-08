@@ -439,18 +439,19 @@ ul { list-style: none; }
 .work-item__logo {
   display: flex;
   align-items: center;
-  height: 48px;
-  color: var(--text);
-  transition: color 0.4s var(--ease);
+  height: 80px;
+  transition: opacity 0.4s var(--ease);
 }
 
-.work-item__logo svg {
-  height: 32px;
-  width: auto;
+.work-item__logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .work-item:hover .work-item__logo {
-  color: var(--cream);
+  opacity: 0.9;
 }
 
 .work-item__info {
