@@ -1049,8 +1049,8 @@ ul { list-style: none; }
   }
 
   .work-card__logo {
-    height: 120px;
-    padding: 20px;
+    height: 80px;
+    padding: 16px;
   }
 
   .work-card__body {
@@ -1279,8 +1279,8 @@ ul { list-style: none; }
   }
 
   .work-card__logo {
-    height: 100px;
-    padding: 16px;
+    height: 70px;
+    padding: 12px;
   }
 
   .about__stats {
