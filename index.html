@@ -35,13 +35,30 @@
 
   <!-- Hero -->
   <header class="hero">
-    <div class="container">
+    <!-- Slideshow background -->
+    <div class="hero__slideshow" id="heroSlideshow">
+      <div class="hero__slide hero__slide--active" style="background-image: url('slide-1.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('slide-2.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('slide-3.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('slide-4.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('slide-5.jpg')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
       <p class="hero__tagline">Creative Agency</p>
       <h1 class="hero__title">
         <span class="hero__line">We design</span>
         <span class="hero__line">brands that</span>
         <span class="hero__line hero__line--accent">turn tides</span>
       </h1>
+    </div>
+    <!-- Slide indicators -->
+    <div class="hero__indicators" id="heroIndicators">
+      <button class="hero__indicator hero__indicator--active" data-slide="0"></button>
+      <button class="hero__indicator" data-slide="1"></button>
+      <button class="hero__indicator" data-slide="2"></button>
+      <button class="hero__indicator" data-slide="3"></button>
+      <button class="hero__indicator" data-slide="4"></button>
     </div>
     <div class="hero__scroll">
       <span>Scroll</span>
