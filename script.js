@@ -62,7 +62,7 @@ if (!isTouch) {
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  document.querySelectorAll('.work-item, .service, .process__step, .testimonial, .about__content, .contact__inner').forEach(el => {
+  document.querySelectorAll('.work-card, .service, .process__step, .testimonial, .about__content, .contact__inner').forEach(el => {
     el.classList.add('reveal');
     revealObserver.observe(el);
   });
