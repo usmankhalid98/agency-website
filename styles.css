@@ -115,16 +115,6 @@ ul { list-style: none; }
 .nav__logo-icon {
   height: 36px;
   width: auto;
-  filter: brightness(0) invert(1);
-  transition: filter 0.5s var(--ease);
-}
-
-.nav--scrolled .nav__logo-icon {
-  filter: brightness(0);
-}
-
-.nav--open .nav__logo-icon {
-  filter: brightness(0) invert(1);
 }
 
 .nav__links {

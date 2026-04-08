@@ -1,50 +1,52 @@
 <svg viewBox="0 0 200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon -->
-  <!-- Left shape -->
+  <!-- Left shape: sage green -->
   <path d="
-    M 18,0
-    H 122
-    C 140,0 148,8 148,24
-    V 32
-    C 148,48 140,60 124,76
-    C 104,96 90,118 84,144
-    C 80,160 76,176 76,184
-    C 76,196 68,200 54,200
-    H 20
-    C 8,200 0,192 0,180
-    V 18
-    C 0,6 8,0 18,0
-    Z" fill="currentColor"/>
+    M 16,0
+    H 110
+    C 128,0 134,8 134,22
+    V 28
+    C 134,48 120,64 106,80
+    C 88,100 80,116 80,132
+    V 180
+    C 80,194 72,200 56,200
+    H 16
+    C 6,200 0,194 0,180
+    V 16
+    C 0,6 6,0 16,0
+    Z" fill="#d4dfc4"/>
 
-  <!-- Right top -->
+  <!-- Top-right: muted olive -->
   <path d="
-    M 168,0
-    H 182
-    C 196,0 200,4 200,18
-    V 64
-    C 200,78 196,82 182,82
-    H 168
-    C 154,82 150,78 150,64
-    V 18
-    C 150,4 154,0 168,0
-    Z" fill="currentColor"/>
+    M 162,0
+    H 180
+    C 194,0 200,8 200,22
+    V 58
+    C 200,72 194,80 180,80
+    H 162
+    C 148,80 142,72 142,58
+    V 22
+    C 142,8 148,0 162,0
+    Z" fill="#a5ab7e"/>
 
-  <!-- Right bottom -->
+  <!-- Bottom-right: dark olive -->
   <path d="
-    M 200,118
-    V 182
-    C 200,196 194,200 180,200
-    H 112
-    C 98,200 94,194 98,182
-    C 106,156 122,136 144,122
-    C 162,110 180,108 190,110
-    C 196,112 200,114 200,118
-    Z" fill="currentColor"/>
+    M 200,100
+    V 180
+    C 200,194 194,200 180,200
+    H 108
+    C 94,200 88,194 88,180
+    V 160
+    C 88,130 108,108 138,98
+    C 158,92 178,94 190,96
+    C 196,97 200,98 200,100
+    Z" fill="#6b7356"/>
 
   <!-- Text: Turning -->
-  <text x="100" y="252" text-anchor="middle" font-family="'Syne', 'Arial Black', sans-serif" font-size="46" font-weight="800" fill="currentColor" letter-spacing="-1">Turning</text>
+  <text x="100" y="255" text-anchor="middle" font-family="'Syne', 'Arial Black', sans-serif" font-size="46" font-weight="800" fill="#8a9066" letter-spacing="-1">Turning</text>
 
-  <!-- Text: Tide co -->
-  <text x="85" y="300" text-anchor="middle" font-family="'Syne', 'Arial Black', sans-serif" font-size="46" font-weight="800" fill="currentColor" letter-spacing="-1">Tide</text>
-  <text x="152" y="296" text-anchor="start" font-family="'Syne', 'Arial Black', sans-serif" font-size="24" font-weight="700" fill="currentColor">co</text>
+  <!-- Text: Tide -->
+  <text x="78" y="305" text-anchor="middle" font-family="'Syne', 'Arial Black', sans-serif" font-size="46" font-weight="800" fill="#8a9066" letter-spacing="-1">Tide</text>
+
+  <!-- Text: co (superscript) -->
+  <text x="148" y="298" font-family="'Syne', 'Arial Black', sans-serif" font-size="24" font-weight="700" fill="#8a9066">co</text>
 </svg>
