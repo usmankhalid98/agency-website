@@ -453,6 +453,11 @@ ul { list-style: none; }
   object-fit: contain;
 }
 
+.work-item__logo--lg {
+  height: 160px;
+  padding: 12px;
+}
+
 .work-item:hover .work-item__logo {
   opacity: 0.95;
 }
