@@ -211,7 +211,7 @@ ul { list-style: none; }
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26, 26, 24, 0.45);
+  background: rgba(26, 26, 24, 0.15);
   z-index: 1;
 }
 
@@ -399,10 +399,10 @@ ul { list-style: none; }
 
 .work-item {
   display: grid;
-  grid-template-columns: 160px 1fr auto;
-  align-items: start;
-  gap: 40px;
-  padding: 40px 0;
+  grid-template-columns: 200px 1fr auto;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 0;
   border-bottom: 1px solid var(--cream-dark);
   transition: all 0.4s var(--ease);
   position: relative;
@@ -439,19 +439,22 @@ ul { list-style: none; }
 .work-item__logo {
   display: flex;
   align-items: center;
-  height: 80px;
+  justify-content: center;
+  height: 120px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 16px;
   transition: opacity 0.4s var(--ease);
 }
 
 .work-item__logo img {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   object-fit: contain;
-  object-position: left center;
 }
 
 .work-item:hover .work-item__logo {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .work-item__info {
@@ -1101,16 +1104,14 @@ ul { list-style: none; }
 
   .work-item {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
     padding: 28px 0;
   }
 
   .work-item__logo {
-    height: 36px;
-  }
-
-  .work-item__logo svg {
-    height: 24px;
+    height: 100px;
+    width: 160px;
+    padding: 12px;
   }
 
   .work-item__title {
