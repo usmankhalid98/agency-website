@@ -90,38 +90,6 @@ contactForm.addEventListener('submit', (e) => {
   }, 3000);
 });
 
-// Hero slideshow
-const slides = document.querySelectorAll('.hero__slide');
-const indicators = document.querySelectorAll('.hero__indicator');
-let currentSlide = 0;
-let slideInterval;
-
-function goToSlide(index) {
-  slides[currentSlide].classList.remove('hero__slide--active');
-  indicators[currentSlide].classList.remove('hero__indicator--active');
-  currentSlide = index;
-  slides[currentSlide].classList.add('hero__slide--active');
-  indicators[currentSlide].classList.add('hero__indicator--active');
-}
-
-function nextSlide() {
-  goToSlide((currentSlide + 1) % slides.length);
-}
-
-function startSlideshow() {
-  slideInterval = setInterval(nextSlide, 5000);
-}
-
-indicators.forEach((btn, i) => {
-  btn.addEventListener('click', () => {
-    clearInterval(slideInterval);
-    goToSlide(i);
-    startSlideshow();
-  });
-});
-
-startSlideshow();
-
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
