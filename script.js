@@ -21,11 +21,13 @@ if (!isTouch) {
   });
 }
 
-// Navigation scroll
+// Navigation scroll (only on pages without nav--case)
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('nav--scrolled', window.scrollY > 100);
-}, { passive: true });
+if (nav && !nav.classList.contains('nav--case')) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scrolled', window.scrollY > 100);
+  }, { passive: true });
+}
 
 // Mobile menu
 const navToggle = document.getElementById('navToggle');
@@ -62,7 +64,7 @@ if (!isTouch) {
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  document.querySelectorAll('.work-card, .service, .process__step, .testimonial, .about__content, .contact__inner').forEach(el => {
+  document.querySelectorAll('.work-card, .service, .process__step, .testimonial, .about__content, .contact__inner, .case-section, .case-featured, .case-images, .case-deliverable').forEach(el => {
     el.classList.add('reveal');
     revealObserver.observe(el);
   });
@@ -75,20 +77,22 @@ if (!isTouch) {
 
 // Contact form
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('button');
-  const original = btn.textContent;
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button');
+    const original = btn.textContent;
 
-  btn.textContent = 'Sent';
-  btn.style.background = 'var(--khaki-dark)';
-  contactForm.reset();
+    btn.textContent = 'Sent';
+    btn.style.background = 'var(--khaki-dark)';
+    contactForm.reset();
 
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.style.background = '';
-  }, 3000);
-});
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.style.background = '';
+    }, 3000);
+  });
+}
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
