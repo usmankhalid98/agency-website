@@ -1298,18 +1298,31 @@ ul { list-style: none; }
   /* Mobile Nav - fullscreen overlay */
   .nav {
     padding: 16px 0;
+    mix-blend-mode: normal;
+    background: transparent;
+    z-index: 500;
   }
 
   .nav--scrolled {
     padding: 12px 0;
+    background: rgba(240, 237, 230, 0.95);
+    backdrop-filter: blur(20px);
   }
 
-  /* When menu is open, disable blend mode so nav sits on top cleanly */
+  /* On mobile over the hero, keep toggle/links white */
+  .nav .nav__toggle span {
+    background: var(--white);
+  }
+
+  .nav--scrolled .nav__toggle span {
+    background: var(--charcoal);
+  }
+
+  /* When menu is open, nav sits on top cleanly */
   .nav.nav--open {
-    mix-blend-mode: normal;
     background: var(--charcoal);
     position: fixed;
-    z-index: 200;
+    z-index: 500;
   }
 
   .nav.nav--open .nav__logo {
@@ -1328,7 +1341,7 @@ ul { list-style: none; }
     align-items: center;
     gap: 40px;
     background: var(--charcoal);
-    z-index: 199;
+    z-index: 499;
     padding-top: 80px;
   }
 
@@ -1365,12 +1378,14 @@ ul { list-style: none; }
 
   .nav__toggle {
     display: flex;
-    z-index: 201;
+    position: relative;
+    z-index: 501;
     width: 44px;
     height: 44px;
     align-items: center;
     justify-content: center;
     -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
   }
 
   .nav__toggle.active span {
