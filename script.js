@@ -77,20 +77,22 @@ if (!isTouch) {
 
 // Contact form
 const contactForm = document.getElementById('contactForm');
+const contactSuccess = document.getElementById('contactSuccess');
+const contactReset = document.getElementById('contactReset');
+
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const btn = contactForm.querySelector('button');
-    const original = btn.textContent;
-
-    btn.textContent = 'Sent';
-    btn.style.background = 'var(--khaki-dark)';
     contactForm.reset();
+    contactForm.classList.add('hidden');
+    contactSuccess.classList.add('active');
+  });
+}
 
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.style.background = '';
-    }, 3000);
+if (contactReset) {
+  contactReset.addEventListener('click', () => {
+    contactSuccess.classList.remove('active');
+    contactForm.classList.remove('hidden');
   });
 }
 
