@@ -33,20 +33,34 @@ if (nav && !nav.classList.contains('nav--case')) {
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
-navToggle.addEventListener('click', () => {
+function toggleMenu(e) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
   const isOpen = navLinks.classList.toggle('active');
   navToggle.classList.toggle('active');
   nav.classList.toggle('nav--open', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
-});
+}
+
+function closeMenu() {
+  navLinks.classList.remove('active');
+  navToggle.classList.remove('active');
+  nav.classList.remove('nav--open');
+  document.body.style.overflow = '';
+}
+
+// Use pointerdown for faster, more reliable mobile response; fall back to click
+if (window.PointerEvent) {
+  navToggle.addEventListener('pointerdown', toggleMenu);
+} else {
+  navToggle.addEventListener('touchstart', toggleMenu, { passive: false });
+  navToggle.addEventListener('click', toggleMenu);
+}
 
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    navToggle.classList.remove('active');
-    nav.classList.remove('nav--open');
-    document.body.style.overflow = '';
-  });
+  link.addEventListener('click', closeMenu);
 });
 
 // Reveal on scroll (desktop only — mobile shows everything immediately)
@@ -96,8 +110,8 @@ if (contactReset) {
   });
 }
 
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smooth scroll (exclude bare "#" to avoid double-handling the logo link)
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
     e.preventDefault();
     const target = document.querySelector(anchor.getAttribute('href'));

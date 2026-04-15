@@ -90,7 +90,7 @@ ul { list-style: none; }
   right: 0;
   z-index: 100;
   padding: 24px 0;
-  transition: all 0.5s var(--ease);
+  transition: background 0.3s var(--ease), padding 0.3s var(--ease);
   mix-blend-mode: difference;
 }
 
@@ -1300,16 +1300,25 @@ ul { list-style: none; }
     padding: 16px 0;
     mix-blend-mode: normal;
     background: transparent;
-    z-index: 500;
+    z-index: 1000;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
   }
 
   .nav--scrolled {
     padding: 12px 0;
-    background: rgba(240, 237, 230, 0.95);
-    backdrop-filter: blur(20px);
+    background: var(--cream);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid var(--cream-dark);
   }
 
-  /* On mobile over the hero, keep toggle/links white */
+  .nav__inner {
+    pointer-events: auto;
+  }
+
+  /* On mobile over the hero, keep toggle white */
   .nav .nav__toggle span {
     background: var(--white);
   }
@@ -1322,7 +1331,7 @@ ul { list-style: none; }
   .nav.nav--open {
     background: var(--charcoal);
     position: fixed;
-    z-index: 500;
+    z-index: 1000;
   }
 
   .nav.nav--open .nav__logo {
@@ -1341,7 +1350,7 @@ ul { list-style: none; }
     align-items: center;
     gap: 40px;
     background: var(--charcoal);
-    z-index: 499;
+    z-index: 999;
     padding-top: 80px;
   }
 
@@ -1379,13 +1388,15 @@ ul { list-style: none; }
   .nav__toggle {
     display: flex;
     position: relative;
-    z-index: 501;
-    width: 44px;
-    height: 44px;
+    z-index: 1001;
+    width: 48px;
+    height: 48px;
     align-items: center;
     justify-content: center;
     -webkit-tap-highlight-color: transparent;
     pointer-events: auto;
+    touch-action: manipulation;
+    cursor: pointer;
   }
 
   .nav__toggle.active span {
