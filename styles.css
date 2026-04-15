@@ -113,7 +113,7 @@ ul { list-style: none; }
 }
 
 .nav__logo-icon {
-  height: 80px;
+  height: 64px;
   width: auto;
 }
 
@@ -1319,7 +1319,7 @@ ul { list-style: none; }
 
   /* Nav logo mobile */
   .nav__logo-icon {
-    height: 50px;
+    height: 42px;
   }
 
   /* Hero mobile */
