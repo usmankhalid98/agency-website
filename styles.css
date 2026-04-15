@@ -366,7 +366,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   height: 240px;
-  padding: 40px;
+  padding: 20px;
   background: var(--cream);
   border-bottom: 1px solid var(--cream-dark);
 }
@@ -374,6 +374,8 @@ ul { list-style: none; }
 .work-card__logo img {
   max-height: 100%;
   max-width: 100%;
+  width: auto;
+  height: 100%;
   object-fit: contain;
 }
 
