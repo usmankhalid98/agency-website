@@ -1523,24 +1523,37 @@ ul { list-style: none; }
 
   .work__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 16px;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    border-radius: 12px;
   }
 
   .work-card__logo {
-    height: 80px;
+    order: 2;
+    height: auto;
+    min-height: 100%;
     padding: 16px;
+    border-bottom: none;
+    border-left: 1px solid var(--cream-dark);
+    border-radius: 0 12px 12px 0;
   }
 
   .work-card__body {
-    padding: 24px;
+    order: 1;
+    padding: 20px;
   }
 
   .work-card__title {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   .work-card__desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.55;
   }
 
   .work-card__buttons {
@@ -1551,7 +1564,8 @@ ul { list-style: none; }
   .work-card__btn {
     width: 100%;
     text-align: center;
-    padding: 14px 24px;
+    padding: 12px 20px;
+    font-size: 0.7rem;
   }
 
   /* Services mobile */
@@ -1761,9 +1775,20 @@ ul { list-style: none; }
     font-size: 2.4rem;
   }
 
+  .work-card {
+    grid-template-columns: 1fr 80px;
+  }
+
   .work-card__logo {
-    height: 70px;
     padding: 12px;
+  }
+
+  .work-card__title {
+    font-size: 1.05rem;
+  }
+
+  .work-card__desc {
+    font-size: 0.75rem;
   }
 
   .about__stats {
