@@ -367,7 +367,7 @@ ul { list-style: none; }
   justify-content: center;
   height: 240px;
   padding: 12px;
-  background: var(--cream);
+  background: #fff;
   border-bottom: 1px solid var(--cream-dark);
 }
 
