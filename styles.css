@@ -1025,7 +1025,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--white);
+  background: #fff;
   border: 1px solid var(--cream-dark);
   border-radius: 16px;
   padding: 40px;
