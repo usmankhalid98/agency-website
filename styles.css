@@ -379,6 +379,11 @@ ul { list-style: none; }
   object-fit: contain;
 }
 
+.work-card__logo--white {
+  background: #fff;
+  border-bottom-color: var(--cream-dark);
+}
+
 .work-card__logo--placeholder {
   background: var(--charcoal);
 }
