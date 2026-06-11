@@ -1016,11 +1016,16 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--charcoal);
-  border: none;
+  background: #fff;
+  border: 1px solid var(--cream-dark);
   border-radius: 16px;
   padding: 40px;
   min-height: 360px;
+}
+
+.case-showcase__logo--dark {
+  background: var(--charcoal);
+  border: none;
 }
 
 .case-showcase__logo img {
