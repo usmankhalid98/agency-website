@@ -379,6 +379,10 @@ ul { list-style: none; }
   object-fit: contain;
 }
 
+.work-card__logo--dark {
+  background: var(--charcoal);
+}
+
 .work-card__logo--placeholder {
   background: var(--charcoal);
 }
@@ -389,6 +393,11 @@ ul { list-style: none; }
   font-weight: 800;
   color: var(--khaki-light);
   letter-spacing: -0.04em;
+}
+
+.case-showcase__logo--dark {
+  background: var(--charcoal);
+  border-color: var(--charcoal);
 }
 
 .case-showcase__logo--placeholder {
