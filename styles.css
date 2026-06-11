@@ -1543,17 +1543,21 @@ ul { list-style: none; }
   .work-card__logo {
     height: auto;
     padding: 0;
-    background: none;
     border-bottom: none;
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 52px;
-    height: 52px;
-    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
     background: var(--charcoal);
     border: 1px solid var(--charcoal-light);
-    padding: 4px;
+    padding: 6px;
+  }
+
+  .work-card__logo--white {
+    background: #fff;
+    border-color: var(--cream-dark);
   }
 
   .work-card {
@@ -1562,7 +1566,7 @@ ul { list-style: none; }
 
   .work-card__body {
     padding: 24px;
-    padding-right: 90px;
+    padding-right: 104px;
   }
 
   .work-card__title {
@@ -1798,16 +1802,16 @@ ul { list-style: none; }
   }
 
   .work-card__logo {
-    width: 44px;
-    height: 44px;
-    top: 20px;
-    right: 20px;
-    padding: 4px;
+    width: 60px;
+    height: 60px;
+    top: 16px;
+    right: 16px;
+    padding: 5px;
   }
 
   .work-card__body {
     padding: 20px;
-    padding-right: 76px;
+    padding-right: 88px;
   }
 
   .about__stats {
