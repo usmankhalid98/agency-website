@@ -367,8 +367,8 @@ ul { list-style: none; }
   justify-content: center;
   height: 240px;
   padding: 12px;
-  background: #fff;
-  border-bottom: 1px solid var(--cream-dark);
+  background: var(--charcoal);
+  border-bottom: 1px solid var(--charcoal-light);
 }
 
 .work-card__logo img {
@@ -377,10 +377,6 @@ ul { list-style: none; }
   width: auto;
   height: 100%;
   object-fit: contain;
-}
-
-.work-card__logo--dark {
-  background: var(--charcoal);
 }
 
 .work-card__logo--placeholder {
@@ -393,11 +389,6 @@ ul { list-style: none; }
   font-weight: 800;
   color: var(--khaki-light);
   letter-spacing: -0.04em;
-}
-
-.case-showcase__logo--dark {
-  background: var(--charcoal);
-  border-color: var(--charcoal);
 }
 
 .case-showcase__logo--placeholder {
@@ -1025,8 +1016,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border: 1px solid var(--cream-dark);
+  background: var(--charcoal);
+  border: none;
   border-radius: 16px;
   padding: 40px;
   min-height: 360px;
@@ -1550,8 +1541,8 @@ ul { list-style: none; }
     width: 52px;
     height: 52px;
     border-radius: 10px;
-    background: var(--cream);
-    border: 1px solid var(--cream-dark);
+    background: var(--charcoal);
+    border: 1px solid var(--charcoal-light);
     padding: 4px;
   }
 
